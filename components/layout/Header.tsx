@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 
 const NAV = [
+  { href: '/view',        label: 'API 테스트' },
   { href: '/genre',       label: '장르별 최고 평점' },
   { href: '/now-playing', label: '지금 상영중'       },
   { href: '/platforms',   label: '플랫폼 안내'       },
@@ -18,7 +19,7 @@ export function Header() {
                        bg-[#07080f]/88 backdrop-blur-md
                        border-b border-[rgba(79,138,247,0.18)]">
       <Link href="/" className="text-lg font-medium tracking-wider text-[#e8eaf2]">
-        Cine<span className="text-[#4f8ef7]">Score</span>
+        <span className="text-[#4f8ef7]">Score</span>Moa
       </Link>
 
       {/* 데스크톱 */}

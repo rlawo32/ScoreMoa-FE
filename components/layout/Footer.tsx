@@ -20,7 +20,7 @@ export function Footer() {
     <footer className="bg-[#07080f] border-t border-[rgba(79,138,247,0.15)] mt-20">
 
       {/* 광고 슬롯 */}
-      <div className="flex justify-center py-5 border-b border-[rgba(79,138,247,0.1)]">
+      {/* <div className="flex justify-center py-5 border-b border-[rgba(79,138,247,0.1)]">
         <div className="w-[728px] max-w-full mx-4 h-[90px] rounded-lg
                         border border-dashed border-[rgba(79,138,247,0.2)]
                         bg-[#0e1118] flex items-center justify-center">
@@ -28,7 +28,7 @@ export function Footer() {
             Advertisement
           </span>
         </div>
-      </div>
+      </div> */}
 
       {/* 본문 */}
       <div className="max-w-4xl mx-auto px-6 py-10
@@ -36,11 +36,10 @@ export function Footer() {
         {/* 브랜드 */}
         <div>
           <p className="text-base font-medium tracking-wider text-[#e8eaf2] mb-3">
-            Cine<span className="text-[#4f8ef7]">Score</span>
+            <span className="text-[#4f8ef7]">Score</span>Moa
           </p>
           <p className="text-[12px] text-[#4a5068] leading-relaxed">
-            왓챠피디아, CGV 골든에그, 로튼 토마토, 팝콘 지수,
-            레터박스, IMDb, TMDB, 메타크리틱 평점을 한 화면에서 비교하세요.
+            왓챠피디아, 로튼 토마토, 레터박스 등 다양한 영화 평점을 한 화면에서 비교하세요.
           </p>
           <p className="text-[11px] text-[#4a5068] mt-4">
             Powered by <span className="text-[#7aaeff]">TMDB</span>
@@ -84,7 +83,7 @@ export function Footer() {
       <div className="max-w-4xl mx-auto px-6 py-4
                       border-t border-[rgba(79,138,247,0.08)]
                       flex flex-col sm:flex-row justify-between gap-2">
-        <p className="text-[11px] text-[#4a5068]">© 2025 CineScore. All rights reserved.</p>
+        <p className="text-[11px] text-[#4a5068]">© 2026 ScoreMoa. All rights reserved.</p>
         <p className="text-[11px] text-[#4a5068]">
           평점 데이터는 각 플랫폼에서 수집되며 실제 수치와 차이가 있을 수 있습니다.
         </p>

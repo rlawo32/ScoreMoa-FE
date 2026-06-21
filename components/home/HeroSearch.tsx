@@ -38,12 +38,9 @@ export function HeroSearch({ popularMovies }: Props) {
 
   return (
     <section className="flex flex-col items-center w-full px-4 pt-20 pb-12">
-      <h1 className="text-[52px] font-light tracking-[2px] text-[#e8eaf2] leading-none mb-1">
-        Cine<span className="text-[#4f8ef7]">Score</span>
+      <h1 className="text-[52px] font-light tracking-[2px] text-[#e8eaf2] leading-none mb-9">
+        <span className="text-[#4f8ef7]">Score</span>Moa
       </h1>
-      <p className="text-[13px] text-[#4a5068] tracking-[0.5px] mb-9">
-        왓챠 · CGV · 로튼토마토 · 팝콘 · 레터박스 · IMDb · TMDB · 메타크리틱
-      </p>
 
       <div ref={containerRef} className="relative w-full max-w-[620px]">
         <div className={`flex items-center gap-2 bg-[#141824] rounded-full
@@ -75,7 +72,7 @@ export function HeroSearch({ popularMovies }: Props) {
           {!query && (
             <button
               onClick={() => setShowPopular(v => !v)}
-              className={`flex-shrink-0 flex items-center gap-1.5 px-3 py-1.5
+              className={`flex-shrink-0 flex items-center gap-1.5 px-3 py-1.5 cursor-pointer
                           rounded-full text-[11px] transition-all duration-150 whitespace-nowrap
                           ${showPopular
                             ? 'bg-[rgba(79,138,247,0.2)] text-[#7aaeff] border border-[rgba(79,138,247,0.45)]'
@@ -95,7 +92,7 @@ export function HeroSearch({ popularMovies }: Props) {
             onClick={() => { if (query.trim()) doSearch(query.trim()) }}
             className="flex-shrink-0 h-[36px] px-[18px] bg-[#4f8ef7] hover:bg-[#7aaeff]
                        active:scale-95 text-white text-[13px] font-medium rounded-full
-                       transition-all duration-150 whitespace-nowrap"
+                       transition-all duration-150 whitespace-nowrap cursor-pointer"
           >
             검색
           </button>
